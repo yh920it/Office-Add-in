@@ -32,15 +32,17 @@ Get-ChildItem -Path $ezPath -File | Select-Object Name, Length, LastWriteTime | 
 
 # 5) Move only likely admin/user state files to quarantine
 #    Patterns below are conservative — adjust as needed. They avoid .db and large files.
-$patterns = @("*user*","*account*","*admin*","*passwd*","*password*","*.usr","*.profile","*.cfg","*.config","*.ini","*login*")
-foreach($p in $patterns){
+$patterns = @("user","account","admin","passwd","password",".usr",".profile",".cfg",".config",".ini","login")
+
+foreach ($p in $patterns) {
     Get-ChildItem -Path $ezPath -Filter $p -File -ErrorAction SilentlyContinue | ForEach-Object {
         $src = $_.FullName
         $dest = Join-Path $quarantinePath $_.Name
         Move-Item -Path $src -Destination $dest -Force
-        Write-Output "Quarantined: $($_.Name)"
+        Write-Output ("Quarantined: " + $_.Name)
     }
 }
+
 
 # 6) Show what we quarantined
 Write-Output "Quarantine contents:"
