@@ -47,7 +47,7 @@
   <DisableEntityHighlighting>true</DisableEntityHighlighting>
 
   <!-- Outer V1_0 wrapper -->
-  <mailappor:VersionOverrides xsi:type="VersionOverridesV1_0">
+  <mailappor:VersionOverrides xsi:type="mailappor:VersionOverridesV1_0">
 
     <!-- Inner V1_1 block -->
     <mailappor:VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1"
@@ -122,4 +122,5 @@
 
     </mailappor:VersionOverrides>
   </mailappor:VersionOverrides>
+
 </OfficeApp>
