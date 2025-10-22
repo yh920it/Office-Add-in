@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
-            xsi:type="MailApp">
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xsi:type="MailApp">
 
   <Id>c38391c5-695b-4563-a37f-bccdef67f5ce</Id>
   <Version>1.0.0.0</Version>
@@ -28,12 +28,6 @@
 
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1"
                     xsi:type="VersionOverridesV1_1">
-
-    <Requirements>
-      <bt:Sets DefaultMinVersion="1.5">
-        <bt:Set Name="Mailbox"/>
-      </bt:Sets>
-    </Requirements>
 
     <Hosts>
       <Host xsi:type="MailHost">
