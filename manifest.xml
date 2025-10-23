@@ -87,22 +87,29 @@
     </Hosts>
 
     <Resources>
-      <bt:Urls>
-        <bt:Url id="taskPaneUrl" DefaultValue="https://yh920it.github.io/Office-Add-in/popup.html"/>
-      </bt:Urls>
+  <bt:Urls>
+    <bt:Url id="taskPaneUrl" DefaultValue="https://yh920it.github.io/Office-Add-in/popup.html"/>
+  </bt:Urls>
 
-      <bt:ShortStrings>
-        <bt:String id="groupLabel" DefaultValue="Automated Secretary"/>
-        <bt:String id="paneButtonLabel" DefaultValue="Schedule Reminder"/>
-        <bt:String id="paneButtonTitle" DefaultValue="Schedule a follow-up reminder"/>
-      </bt:ShortStrings>
+  <bt:Images>
+    <bt:Image id="icon16" DefaultValue="https://yh920it.github.io/Office-Add-in/icon16.png"/>
+    <bt:Image id="icon64" DefaultValue="https://yh920it.github.io/Office-Add-in/icon64.png"/>
+    <bt:Image id="icon128" DefaultValue="https://yh920it.github.io/Office-Add-in/icon128.png"/>
+  </bt:Images>
 
-      <bt:LongStrings>
-        <bt:String id="paneButtonDesc" DefaultValue="Open the pane to schedule a follow-up reminder for this email."/>
-        <bt:String id="residAppDesc" DefaultValue="Schedule follow-up reminders for sent emails."/>
-      </bt:LongStrings>
-    </Resources>
+  <bt:ShortStrings>
+    <bt:String id="groupLabel" DefaultValue="Automated Secretary"/>
+    <bt:String id="paneButtonLabel" DefaultValue="Schedule Reminder"/>
+    <bt:String id="paneButtonTitle" DefaultValue="Schedule a follow-up reminder"/>
+  </bt:ShortStrings>
+
+  <bt:LongStrings>
+    <bt:String id="paneButtonDesc" DefaultValue="Open the pane to schedule a follow-up reminder for this email."/>
+    <bt:String id="residAppDesc" DefaultValue="Schedule follow-up reminders for sent emails."/>
+  </bt:LongStrings>
+</Resources>
 
   </mailappor:VersionOverrides>
 </OfficeApp>
+
 
