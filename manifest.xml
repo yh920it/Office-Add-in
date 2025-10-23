@@ -46,74 +46,62 @@
 
   <DisableEntityHighlighting>true</DisableEntityHighlighting>
 
-    <mailappor:VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides"
-                                xsi:type="VersionOverridesV1_1">
+   <mailappor:VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides"
+                              xsi:type="mailappor:VersionOverridesV1_0">
 
-      <Description resid="residAppDesc"/>
+    <Description resid="residAppDesc"/>
 
-      <Requirements>
-        <bt:Sets DefaultMinVersion="1.3">
-          <bt:Set Name="Mailbox"/>
-        </bt:Sets>
-      </Requirements>
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.3">
+        <bt:Set Name="Mailbox"/>
+      </bt:Sets>
+    </Requirements>
 
-      <Hosts>
-        <Host xsi:type="MailHost">
-          <DesktopFormFactor>
-            <ExtensionPoint xsi:type="MessageReadCommandSurface">
-              <OfficeTab id="TabDefault">
-                <Group id="msgReadGroup">
-                  <Label resid="groupLabel"/>
-                  <Control xsi:type="Button" id="openPaneButton">
-                    <Label resid="paneButtonLabel"/>
-                    <Supertip>
-                      <Title resid="paneButtonTitle"/>
-                      <Description resid="paneButtonDesc"/>
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="icon16"/>
-                      <bt:Image size="32" resid="icon64"/>
-                      <bt:Image size="80" resid="icon128"/>
-                    </Icon>
-                    <Action xsi:type="ShowTaskpane">
-                      <SourceLocation resid="taskPaneUrl"/>
-                    </Action>
-                  </Control>
-                </Group>
-              </OfficeTab>
-            </ExtensionPoint>
-          </DesktopFormFactor>
-        </Host>
-      </Hosts>
+    <Hosts>
+      <Host xsi:type="MailHost">
+        <DesktopFormFactor>
+          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="msgReadGroup">
+                <Label resid="groupLabel"/>
+                <Control xsi:type="Button" id="openPaneButton">
+                  <Label resid="paneButtonLabel"/>
+                  <Supertip>
+                    <Title resid="paneButtonTitle"/>
+                    <Description resid="paneButtonDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="icon16"/>
+                    <bt:Image size="32" resid="icon64"/>
+                    <bt:Image size="80" resid="icon128"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="taskPaneUrl"/>
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
 
-      <Resources>
-        <bt:Urls>
-          <bt:Url id="taskPaneUrl" DefaultValue="https://yh920it.github.io/Office-Add-in/popup.html"/>
-        </bt:Urls>
-        <bt:Images>
-          <bt:Image id="icon16" DefaultValue="https://yh920it.github.io/Office-Add-in/icon16.png"/>
-          <bt:Image id="icon64" DefaultValue="https://yh920it.github.io/Office-Add-in/icon64.png"/>
-          <bt:Image id="icon128" DefaultValue="https://yh920it.github.io/Office-Add-in/icon128.png"/>
-        </bt:Images>
-        <bt:ShortStrings>
-          <bt:String id="groupLabel" DefaultValue="Automated Secretary"/>
-          <bt:String id="paneButtonLabel" DefaultValue="Schedule Reminder"/>
-          <bt:String id="paneButtonTitle" DefaultValue="Schedule a follow-up reminder"/>
-        </bt:ShortStrings>
-        <bt:LongStrings>
-          <bt:String id="paneButtonDesc" DefaultValue="Open the pane to schedule a follow-up reminder for this email."/>
-          <bt:String id="residAppDesc" DefaultValue="Schedule follow-up reminders for sent emails."/>
-        </bt:LongStrings>
-      </Resources>
+    <Resources>
+      <bt:Urls>
+        <bt:Url id="taskPaneUrl" DefaultValue="https://yh920it.github.io/Office-Add-in/popup.html"/>
+      </bt:Urls>
 
-      <WebApplicationInfo>
-        <Id>cd300113-3aa4-4e6e-800c-e9462ee9dc2e</Id>
-        <Resource>api://cd300113-3aa4-4e6e-800c-e9462ee9dc2e</Resource>
-        <Scopes>
-          <Scope>Mail.Read</Scope>
-          <Scope>Calendars.ReadWrite</Scope>
-        </Scopes>
-      </WebApplicationInfo>
+      <bt:ShortStrings>
+        <bt:String id="groupLabel" DefaultValue="Automated Secretary"/>
+        <bt:String id="paneButtonLabel" DefaultValue="Schedule Reminder"/>
+        <bt:String id="paneButtonTitle" DefaultValue="Schedule a follow-up reminder"/>
+      </bt:ShortStrings>
 
-    </mailappor:VersionOverrides>
+      <bt:LongStrings>
+        <bt:String id="paneButtonDesc" DefaultValue="Open the pane to schedule a follow-up reminder for this email."/>
+        <bt:String id="residAppDesc" DefaultValue="Schedule follow-up reminders for sent emails."/>
+      </bt:LongStrings>
+    </Resources>
+
+  </mailappor:VersionOverrides>
 </OfficeApp>
