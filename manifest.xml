@@ -47,7 +47,7 @@
   <DisableEntityHighlighting>true</DisableEntityHighlighting>
 
    <mailappor:VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides"
-                              xsi:type="mailappor:VersionOverridesV1_0">
+                              xsi:type="VersionOverridesV1_0">
 
     <Description resid="residAppDesc"/>
 
@@ -105,3 +105,4 @@
 
   </mailappor:VersionOverrides>
 </OfficeApp>
+
